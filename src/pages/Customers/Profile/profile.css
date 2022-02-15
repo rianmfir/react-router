@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#profile {
+  position: relative;
+  height: 100vh;
+}
+
+
+.profile {
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.profile .profileCust {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+  z-index: -1;
+}
+
+.profile .profileCust h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #211b19;
+  background: #fff;
+  padding: 10px 5px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.profile button {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #ff6300;
+  font-size: 18px;
+  border-radius:50px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.profile button:hover {
+  color: #ff6300;
+  background: #211b19;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .profile .profileCust {
+    height: 148px;
+    margin: 0px auto 10px;
+  }
+
+  .profile .profileCust h2 {
+    font-size: 16px;
+  }
+  .profile button {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}
